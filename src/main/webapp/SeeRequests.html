@@ -1,0 +1,25 @@
+<!-- Where Finance Managers can see the requests-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reimbursement Requests</title>
+</head>
+
+<body>
+    <h1>Select which reimbursements you want to see: </h1>
+    <form action="reimbursements" method="GET" target="_self">
+        <input type="radio" value="PENDING" name = "Status" id = "PENDING">
+        <label for="PENDING">Pending Reimbursements </label><br>
+        <input type="radio" value="APPROVED" name = "Status" id = "APPROVED">
+        <label for="APPROVED">Approved Reimbursements </label><br>
+        <input type="radio" value="DENIED" name = "Status" id = "DENIED">
+        <label for="DENIED">Denied Reimbursements </label><br>
+        <br /><br /> 
+        <input type ="submit" value ="Submit" /> 
+    </form>
+    
+</body>
+</html>

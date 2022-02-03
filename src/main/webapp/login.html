@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the ERS</title>
+</head>
+<body>
+
+<form target="_self" method="post" action="login">
+    Username:<br />
+    <input type ="text" name="username" placeholder="Username" required/>
+    <br />
+    Password:<br />
+    <input type ="password" name="password" />
+    <br /><br />
+    <!--radio button for financial manager or employee-->
+    <input type="radio" value="EMPLOYEE" name = "Role" id = "EMPLOYEE">
+    <label for="EMPLOYEE">Employee Sign-in</label><br>
+    <input type="radio" value="FINANCE_MANAGER" name = "Role" id = "FINANCE_MANAGER">
+    <label for="FINANCE_MANAGER">Finance Manager Sign-in</label><br>
+
+    <input type ="submit" value ="Log in" />
+</form>
+
+</body>
+</html>

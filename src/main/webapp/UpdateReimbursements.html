@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Reimbursement Request</title>
+</head>
+<h1>Update Reimbursement Request</h1>
+<body>
+    <form action="status" target = "_self" method="post">
+     <label for="rid"> Reimbursement ID </label><br>
+     <input type="number" value="rid" name = "rid" id = "rid">
+     <br/>
+
+<input type="radio" value="APPROVED" name = "Status" id = "APPROVE">
+<label for="APPROVE">APPROVE</label><br>
+<input type="radio" value="DENIED" name = "Status" id = "DENY">
+<label for="DENY">DENY</label><br>
+
+     <label for="resolver"> Your username </label><br>
+     <input type="text" value="resolver" name = "resolver" id = "resolver">
+     <br/>
+     <input type ="submit" value ="update" />
+ </form>
+
+
+
+</body>
+</html>

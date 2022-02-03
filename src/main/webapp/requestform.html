@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Reimbursement Request Form</h1>
+    <form action="reimbursements" target = "_blank" method="post" id="myForm">
+        <!--
+
+        instead of submit, set a button with an onclick attribute that would invoke a function in js
+        where making an ajax call or using the fetch api
+
+        or get parameter in servlet
+
+            // employee name - text box/input box
+            // employee id - text box. ints only
+            // employee username - text box
+            // event type - drop box
+            // cost of Event - text box
+            // requested amount - int. greater than or equal to 1000.
+            // grading format - drop box
+            // grade - text
+            // date - text box
+            // location - text box
+
+                    int university = 80;
+        int seminar = 60;
+        int certPrep = 75;
+        int techT = 90;
+        int cert = 100;
+        int other = 30;
+        -->
+
+        <label for="employeename"> Name </label><br>
+        <input type="text" value="employeename" name = "name" id = "employeename">
+        <br/>
+        <!--<label for="id"> User ID </label><br>
+        <input type="text" value="id" name = "name" id = "id">
+        <br/>-->
+        <label for="username"> Name </label><br>
+        <input type="text" value="username" name = "username" id = "username">
+        <br/>
+        <p>Event Type</p>
+        <input type="radio" value="university" name = "Event Type" id = "university">
+        <label for="university">University</label><br>
+
+        <input type="radio" value="seminar" name = "Event Type" id = "seminar">
+        <label for="seminar">Seminar </label><br>
+
+        <input type="radio" value="certprep" name = "Event Type" id = "certprep">
+        <label for="certprep">Certification Preparation </label><br>
+
+        <input type="radio" value="techt" name = "Event Type" id = "techt">
+        <label for="techt">Technical Training </label><br>
+
+        <input type="radio" value="cert" name = "Event Type" id = "cert">
+        <label for="cert">Certification </label><br>
+
+        <input type="radio" value="other" name = "Event Type" id = "other">
+        <label for="other">Other </label><br>
+        <br/>
+        <label for="Cost"> Cost of Event </label><br>
+        <input type="number" value="cost" name = "cost" id = "cost">
+        <br/>
+        <label for="RequestedAmount"> Amount Requested </label><br>
+        <input type="number" value="RequestedAmount" name = "RequestedAmount" id = "RequestedAmount">
+        <p>Be sure to calculate your max reimbursement amount in our <a href = "requestcalculator.html"> max request amount calculator</a></p>
+
+        <p>Grading Format</p>
+        <input type="radio" value="lettergrade" name = "Grading Format" id = "lettergrade">
+        <label for="lettergrade">Letter Grade </label><br>
+
+       <!-- <input type="radio" value="gpa" name = "Grading Format" id = "gpa">
+        <label for="gpa">GPA </label><br>
+        <br/> -->
+
+        <input type="radio" value="other1" name = "Grading Format" id = "other1">
+        <label for="other1">Other </label><br>
+        <br/>
+
+        <label for="grade"> Grade if letter grade </label><br>
+        <input type="text" value="grade" name = "grade" id = "grade">
+        <br/>
+
+        <label for="date"> Date </label><br>
+        <input type="text" value="date" name = "date" id = "date">
+        <br/><br />
+
+        <!--<label for="date"> Date </label><br>
+        <input type="date" value="date" name = "date" id = "date">
+        <br/>-->
+
+        <label for="Description">Description:</label><br>
+        <textarea rows="5" cols="50" name="Description"
+                  id="Description"></textarea>
+        <br/>
+
+        <label for="location"> Location </label><br>
+        <input type="text" value="location" name = "location" id = "location">
+        <br/>
+        <br /><br />
+        <input type ="submit" value ="Submit" />
+
+
+        <script>
+
+
+            
+            /*myForm = document.getElementById('myForm');
+            let reimbursementsUrl = "http://localhost:8080/Project1/reimbursements";
+
+            myForm.addEventListener('submit', function(e){
+                e.preventDefault();
+
+                const formData = new FormData(this); // key value pairs
+                fetch(reimbursementsUrl, {
+                    method: 'post',
+                    body: formData
+                    }).then(function (response){
+                    return response.text();
+                    }).then(function (text) {
+                    console.log(text);
+                    }).catch(function (error) {
+                    console.error(error);
+                    })
+            });*/
+        </script>
+    </form>
+</body>
+</html>
